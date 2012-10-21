@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+    <!--
+	<Button
+    	android:id="@+id/buttonRefresh"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_alignParentLeft="true"
+    	android:layout_alignParentTop="true"
+    	android:text="@string/refreshButtonText"
+	/>
+    -->  
+    <com.google.android.maps.MapView
+    	xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:id="@+id/mapview"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:clickable="true"
+    	android:apiKey="0eiN5WI1Rjx69SHthgkSRcl0a4TtKzZNyCZ5Yww"
+	/>
+
+    <Button
+        android:id="@+id/buttonRefresh"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mapview"
+        android:layout_alignParentTop="true"
+        android:text="@string/refreshButtonText"
+        android:onClick="onClickRefresh"
+        />
+
+    <EditText
+        android:id="@+id/editTextInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonRefresh"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/buttonRefresh"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+    
+</RelativeLayout>
