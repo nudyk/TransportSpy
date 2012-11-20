@@ -1,4 +1,4 @@
-package com.example.transportspy;
+package com.transportspy;
 
 import android.graphics.Canvas;
 import android.graphics.Color;
